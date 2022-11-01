@@ -1,0 +1,23 @@
+.ListaFarmacia {
+
+}
+
+img{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+td{
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+thead{
+    text-align: center;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(26, 26, 225);
+}
+

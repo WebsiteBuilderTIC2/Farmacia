@@ -1,0 +1,39 @@
+[
+    {
+        "nombre":"Dolex",
+        "imgurl":"https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol/es_CO/dolex-products/ninos2-tabletas/Ninos_Tab_408x300.png?auto=format",
+        "descripcion":"Sirve para todas las dolencias",
+        "precio":12000,
+        "stock":50
+    },
+    {
+        "nombre":"Paracetamol",
+        "imgurl":"https://www.pharmacys.com.ec/wcsstore/DF_CatalogAsset/images/catalog/producto/fullimage/31149P-1.jpg",
+        "descripcion":"Analgésico y antipirético, inhibidor de la síntesis de prostaglandinas periférica y central por acción sobre la ciclooxigenasa. Bloquea la generación del impulso doloroso a nivel periférico",
+        "precio":14500 ,
+        "stock":50
+    },
+    {
+        "nombre":"Acetaminofen",
+        "imgurl":"https://www.farmalisto.com.co/95304/acetaminofen-500-mg-american-generics-caja-con-100-tabletas.jpg",
+        "descripcion":"Medicamento común para aliviar el dolor ligero o moderado de dolores de cabeza, dolores musculares, períodos menstruales, resfriados y gargantas irritadas, dolores de muelas, dolores de espalda y para reducir la fiebre.",
+        "precio":20400,
+        "stock":100
+    },
+    {
+        "nombre":"Bonfiest",
+        "imgurl":"https://farmapalacio.com/wp-content/uploads/2020/07/7702057841256.jpg",
+        "descripcion":"Analgésico, antipirético. Antiácido. Tratamiento de trastornos dispépticos generados por exceso de bebidas no alcohólicas y comidas.",
+        "precio":18600 ,
+        "stock":30 
+    },
+    {
+        "nombre":"Mareol",
+        "imgurl":"https://lh3.googleusercontent.com/F2fG1KybTYYCCRiWmKtKjMwpv9uN88Yqb92kDUFgOPC0LPozXGLJBLV_wsC4UGrfRWZXTO5DFKAC-oVIWciwmI729GMwHwB0UBQx_sDhZSRCT95w=s360",
+        "descripcion":"Mareol Evita y alivia el mareo con dimenhidrinato",
+        "precio": 6550,
+        "stock": 12
+    }
+
+
+]
