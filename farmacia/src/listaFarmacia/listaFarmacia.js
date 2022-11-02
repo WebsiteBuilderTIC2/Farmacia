@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import datosProductoJson from "./productos.json"
 import Table from 'react-bootstrap/Table';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const ListaFarmacia = () => 
   {
@@ -13,39 +14,24 @@ const ListaFarmacia = () =>
 
     return (
       <div>
-      <Table striped bordered hover>
-
-        
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Imagen</th>
-            <th>Precio Und</th>
-            <th>Stock</th>
-          </tr>
-        </thead>
-        <tbody>
-        
+      <Row>
           { 
             datosProducto.map(
               (producto)=>{
                 return(
-                  <tr>
-                    <td>{producto.nombre}</td>
-                    <img src={producto.imgurl}></img>
-                    <td>{producto.precio}</td>
-                    <td>{producto.stock}</td>
-                  </tr>
+                <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={producto.imgurl} />
+                <ListGroup className="list-group-flush">
+                  <ListGroup.Item><h2>{producto.nombre}</h2></ListGroup.Item>
+                  <ListGroup.Item><p>$ {producto.precio}</p></ListGroup.Item>
+                  <ListGroup.Item><p>stock: {producto.stock}</p></ListGroup.Item>
+                </ListGroup>
+                </Card>
                 );
               }
             )
           }
-           <tr>
-            <td>
-            </td>  
-          </tr> 
-        </tbody>
-      </Table>
+        </Row>
       </div>
     )
   }

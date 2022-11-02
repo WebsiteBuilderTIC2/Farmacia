@@ -5,6 +5,7 @@ import ListaVentas from './listaFarmacia/listaVentas';
 import ListaFarmacia from './listaFarmacia/listaFarmacia';
 import datosVentasJson from "./listaFarmacia/datos.json"
 import datosProductosJson from "./listaFarmacia/productos.json"
+import ModificarProductos from './listaFarmacia/modificarProductos';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -38,7 +39,7 @@ function App() {
       <Routes>
         <Route path='/ventas' element={<ListaVentas/>}/>
         <Route path='/productos' element={<ListaFarmacia/>}/>
-        <Route path='/Modificarproductos' element={<ModificarFarmacia/>}/>
+        <Route path='/Modificarproductos' element={<ModificarProductos/>}/>
       </Routes>
     </BrowserRouter>
     </>
