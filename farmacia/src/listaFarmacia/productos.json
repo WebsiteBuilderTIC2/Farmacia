@@ -8,7 +8,7 @@
     },
     {
         "nombre":"Paracetamol",
-        "imgurl":"https://www.pharmacys.com.ec/wcsstore/DF_CatalogAsset/images/catalog/producto/fullimage/31149P-1.jpg",
+        "imgurl":"https://www.actuamed.com.mx/sites/default/files/paracetamol_tabs_500mg_c10_v2.png",
         "descripcion":"Analgésico y antipirético, inhibidor de la síntesis de prostaglandinas periférica y central por acción sobre la ciclooxigenasa. Bloquea la generación del impulso doloroso a nivel periférico",
         "precio":14500 ,
         "stock":50
@@ -29,7 +29,7 @@
     },
     {
         "nombre":"Mareol",
-        "imgurl":"https://lh3.googleusercontent.com/F2fG1KybTYYCCRiWmKtKjMwpv9uN88Yqb92kDUFgOPC0LPozXGLJBLV_wsC4UGrfRWZXTO5DFKAC-oVIWciwmI729GMwHwB0UBQx_sDhZSRCT95w=s360",
+        "imgurl":"https://www.drogueriasgalenica.com/image/cache/catalog/packs/mareol_tabletas_50_mg-910x1155.png",
         "descripcion":"Mareol Evita y alivia el mareo con dimenhidrinato",
         "precio": 6550,
         "stock": 12
