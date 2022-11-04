@@ -12,6 +12,17 @@ const ListaCarrito = () =>
   {
     const [datosCarrito] = useState(datosCarritoJson)
 
+    /* const [total, setTotal] = useState(0) */
+
+    /* let precio = Array.from(datosCarrito.keys()); */
+    function sumatoria(){
+    let carr = [ ...datosCarrito.values()]
+    for(let i = 0; i < carr.length; i++){
+      const suma = carr[i].cantidad*(carr[i].precio) + carr[i+1].cantidad*(carr[i+1].precio)
+      return suma
+    }
+    }
+
     return (
       <div>
       <Table striped bordered hover>
@@ -30,6 +41,7 @@ const ListaCarrito = () =>
             datosCarrito.map(
               (carrito)=>{
                 return(
+                  <>
                   <tr>
                     <td><img src={carrito.imgurl}></img></td>
                     <td>{carrito.cantidad}</td>
@@ -37,6 +49,7 @@ const ListaCarrito = () =>
                     <td>{carrito.precio}</td>
                     <td>{carrito.precio*carrito.cantidad}</td>
                   </tr>
+                  </>
                 );
               }
             )
@@ -45,6 +58,17 @@ const ListaCarrito = () =>
             <td>
             </td>  
           </tr> 
+        </tbody>
+      </Table>
+      <Table>
+        <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td>{sumatoria()}</td>
+        </tr>
         </tbody>
       </Table>
         <div class="Botones">

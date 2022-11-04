@@ -22,9 +22,9 @@ function App() {
     localStorage.setItem("productos",JSON.stringify(datosProductosJson))
   //}
 
-  let usuario = prompt("Ingrese contraseña");
+  //let usuario = prompt("Ingrese contraseña");
 
-  const inicio = usuario;
+  const inicio = 1;
 
   if(inicio == "1"){
 

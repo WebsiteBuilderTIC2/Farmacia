@@ -9,15 +9,17 @@ const ListaVentas = () =>
   {
     const [datosVenta] = useState(datosVentaJson)
 
+    function sumatoria(){
+      let venta = [ ...datosVenta.values()]
 
-    /* const valores = datosVenta.map((venta)=>{
-      for (let i = 0; i < datosVenta.map.length; i++){
-      let valor= venta.valor
-      console.log(valor)
-      console.log(datosVenta.length)
-      return valor
-    }
-    }) */
+      let suma = []
+      for(let i = 0; i <= venta.length; i++){
+          suma = venta[i].valor + venta[i+1].valor + venta[i+2].valor
+          console.log(suma)
+          console.log(i)
+          return suma
+      }
+      }
 
     return (
       <div>
@@ -48,6 +50,17 @@ const ListaVentas = () =>
             <td>
             </td>  
           </tr> 
+        </tbody>
+      </Table>
+      <Table>
+        <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td>{sumatoria()}</td>
+        </tr>
         </tbody>
       </Table>
       </div>
