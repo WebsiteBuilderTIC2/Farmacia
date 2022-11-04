@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import styles from './listaVentas.module.css';
+import './listaFarmacia.module.css';
 import datosCarritoJson from "./carrito.json"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Form from 'react-bootstrap/Form'
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+
 
 const ListaCarrito = () => 
   {
@@ -30,10 +32,10 @@ const ListaCarrito = () =>
                 return(
                   <tr>
                     <td><img src={carrito.imgurl}></img></td>
-                    <td>2</td>
+                    <td>{carrito.cantidad}</td>
                     <td>{carrito.nombre}</td>
                     <td>{carrito.precio}</td>
-                    <td>{carrito.precio*2}</td>
+                    <td>{carrito.precio*carrito.cantidad}</td>
                   </tr>
                 );
               }
@@ -45,8 +47,12 @@ const ListaCarrito = () =>
           </tr> 
         </tbody>
       </Table>
-      <button>Finalizar compra</button>
-      <button>Cancelar</button>
+        <div class="Botones">
+          <ButtonGroup>
+            <Button variant="info">Finalizar compra</Button>
+            <Button variant="danger">Cancelar</Button>
+          </ButtonGroup>
+        </div>
       </div>
       
     )

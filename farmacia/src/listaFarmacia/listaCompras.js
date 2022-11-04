@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import datosComprasJson from "./carrito.json"
+import Button from 'react-bootstrap/Button'
 
 const ListaCompras = () => 
   {
@@ -22,7 +23,7 @@ const ListaCompras = () =>
                   <ListGroup.Item><h2>{producto.nombre}</h2></ListGroup.Item>
                   <ListGroup.Item><p>$ {producto.precio}</p></ListGroup.Item>
                   <ListGroup.Item><p>stock: {producto.stock}</p></ListGroup.Item>
-                  <ListGroup.Item><button>Comprar</button></ListGroup.Item>
+                  <ListGroup.Item><Button variant="info">Comprar</Button></ListGroup.Item>
                 </ListGroup>
                 </Card>
                 );
