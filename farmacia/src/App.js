@@ -11,6 +11,9 @@ import datosProductosJson from "./listaFarmacia/productos.json"
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 
 function App() {
 
@@ -22,14 +25,17 @@ function App() {
     localStorage.setItem("productos",JSON.stringify(datosProductosJson))
   //}
 
-  //let usuario = prompt("Ingrese contraseña");
-
-  const inicio = 1;
-
-  if(inicio == "1"){
-
   return (
     <>
+    <div>
+    <Button variant="primary" type="submit" href="/productos">
+        Administrador
+    </Button>
+    <Button variant="primary" type="submit" href="/compras">
+        Cliente
+    </Button>
+    </div>
+    <div>
     <BrowserRouter>
 
       <Navbar bg="light" expand="lg">
@@ -50,13 +56,10 @@ function App() {
         <Route path='/Modificarproductos' element={<ModificarProductos/>}/>
       </Routes>
     </BrowserRouter>
-    </>
-  );
-}else if(inicio == "2"){
-    return (
-      <>
-      <BrowserRouter>
-  
+
+    </div>
+    <div>
+    <BrowserRouter>
         <Navbar bg="light" expand="lg">
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -73,11 +76,9 @@ function App() {
           <Route path='/carrito' element={<ListaCarrito/>}/>
         </Routes>
       </BrowserRouter>
+      </div>
       </>
-    );
-  }else{
-    alert("Contraseña incorrecta")
-  }
+      );
 }
 
 export default App;
